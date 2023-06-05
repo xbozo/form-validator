@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.screen {
+    display: flex;
+    height: 100vh;
+}
+
+.leftside {
+    flex: 1;   /* pega o tamanho que sobrar da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    max-width: 500px;
+    height: 700px;
+}
+
+.rightside {
+    width: 400px;
+    padding: 50px;
+    background-color: #bbb;
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rightside input {
+    width: 100%;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;  /* quando o campo estiver em foco tira o visual de foco dele do navegador */
+}
+
+.error {
+    font-size: 11px;
+    background-color: #f00;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+}
